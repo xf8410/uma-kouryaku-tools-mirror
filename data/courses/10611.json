@@ -1,0 +1,51 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/1001",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 1001,
+    "name": "フェブラリーステークス",
+    "grade": "G1",
+    "term": "2月 後半",
+    "fans_required": 12000,
+    "fans_gained": 10000,
+    "track": "東京",
+    "distance_m": 1600,
+    "distance_type": "マイル",
+    "surface": "ダート",
+    "rotation": "左回り",
+    "bonus_status": "スピード、スタミナ"
+  },
+  "course": {
+    "course_set_id": 10611,
+    "raw_params": [
+      {"id": 10611002, "type": 2, "raceTrackCourseId": 10611, "distance": 0, "length": 65000, "value": 2},
+      {"id": 10611000, "type": 0, "raceTrackCourseId": 10611, "distance": 65000, "length": 22500, "value": 3},
+      {"id": 10611001, "type": 0, "raceTrackCourseId": 10611, "distance": 87500, "length": 22400, "value": 4},
+      {"id": 10611003, "type": 2, "raceTrackCourseId": 10611, "distance": 109900, "length": 50100, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "直線2", "start": 0, "end": 650},
+      {"kind": "コーナー3", "start": 650, "end": 875},
+      {"kind": "コーナー4", "start": 875, "end": 1099},
+      {"kind": "直線1", "start": 1099, "end": 1600}
+    ],
+    "slopes": [
+      {"kind": "下り坂", "start": 575, "end": 775, "per": -1},
+      {"kind": "上り坂", "start": 1100, "end": 1350, "per": 1.5}
+    ],
+    "slope_total_m": {"up": 5, "down": -5},
+    "phases_m": {
+      "序盤": [0, 267],
+      "中盤": [267, 1067],
+      "終盤": [1067, 1333],
+      "ラストスパート": [1333, 1600],
+      "ポジションキープ区間": [0, 667]
+    }
+  },
+  "notable": [
+    "東京沙1600（フェブラリーS）course_set=10611：与京都芝1600(10805)不同——同场地同距离但芝沙不同、分段完全不同",
+    "本赛道无起始『無』段（直線2 从 0m 开始）——与京都1600对照，CourseParam 分段随场地/地面变化",
+    "下坡在 575-775（-1%），上坡在 1100-1350（+1.5%），最终直线前有 250m 上坡——影响 ExtraTargetSpeed 冲出判定的关键布局",
+    "適性スキル『踏み込み上手』（沙场专属条件技）在此赛道展示——condition 含 ground_type==2 类技能的站点聚合方式"
+  ]
+}
