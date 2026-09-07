@@ -1,0 +1,51 @@
+{
+  "source": "https://ウマ娘.攻略.tools/cards/100503",
+  "fetched_at": "2026-09-07",
+  "note": "育成角色页结构样例（[ブランシュ・エトワール]フジキセキ）。characters/<id> 无直链响应，角色数据从 cards/<id>（育成ウマ娘一覧，266种）获取。",
+  "card": {
+    "id": 100503,
+    "name": "[ブランシュ・エトワール] フジキセキ",
+    "nickname": "白フジ、白キセキ",
+    "release": "2026-04-30",
+    "base_chara": "フジキセキ",
+    "best_courses": [
+      {"track": "中山2000芝", "value": 5.97, "rank": 15},
+      {"track": "阪神2400芝", "value": 6.46, "rank": 17},
+      {"track": "東京2000芝", "value": 5.34, "rank": 20},
+      {"track": "阪神2000芝", "value": 5.32, "rank": 24},
+      {"track": "東京2400芝", "value": 5.26, "rank": 39}
+    ],
+    "base_status_by_awaken": [
+      {"lv": 3, "speed": 92, "stamina": 82, "power": 89, "guts": 87, "wiz": 100},
+      {"lv": 4, "speed": 102, "stamina": 92, "power": 99, "guts": 96, "wiz": 111},
+      {"lv": 5, "speed": 113, "stamina": 101, "power": 109, "guts": 106, "wiz": 121}
+    ],
+    "unique_skill": "Gloire à toi!",
+    "evolution_skills": ["響け、万雷の喝采よ", "光輝なるは白き王"],
+    "awaken_skills": [
+      {"name": "快速", "pt": 200},
+      {"name": "右回り○", "pt": 90},
+      {"name": "会心の一歩", "pt": 180},
+      {"name": "力業", "pt": 190},
+      {"name": "神速", "pt": 200},
+      {"name": "躍動", "pt": 170},
+      {"name": "王手", "pt": 180}
+    ],
+    "target_races": [
+      {"stage": "ジュニア", "track": "阪神1600芝右", "grade": "G1", "fans": 7000},
+      {"stage": "クラシック", "track": "中山2000芝右", "grade": "G2", "fans": 5400},
+      {"stage": "クラシック", "track": "中山2000芝右", "grade": "G1", "fans": 11000},
+      {"stage": "クラシック", "track": "東京1600芝左", "grade": "G1", "fans": 10500, "alt": "東京2400芝左 G1 20000"},
+      {"stage": "クラシック", "track": "京都3000芝右", "grade": "G1", "fans": 12000, "alt": "京都1600芝右 G1 11000"},
+      {"stage": "シニア", "track": "中京1200芝左", "grade": "G1", "fans": 13000},
+      {"stage": "シニア", "track": "東京1600芝左", "grade": "G1", "fans": 13000},
+      {"stage": "シニア", "track": "東京2000芝左", "grade": "G1", "fans": 15000},
+      {"stage": "シニア", "track": "中山2500芝右", "grade": "G1", "fans": 30000}
+    ]
+  },
+  "notable": [
+    "進化スキル「響け、万雷の喝采よ」描述含 全開スパート（全力冲刺）条件——再次印证 run_at_full_speed 状态在进化固有中的使用",
+    "目标赛程表 = single_mode_program 链路的玩家侧展示（G1 选择支 OR 结构）",
+    "best_courses 的 [バ] 值 = 站点自算的赛道特化评分（各コースの特効キャラ 工具）"
+  ]
+}
