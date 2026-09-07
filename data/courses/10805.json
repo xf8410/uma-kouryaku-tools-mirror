@@ -1,0 +1,49 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/3001",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 3001,
+    "name": "京都金杯",
+    "name_kana": "キョウトキンパイ",
+    "grade": "G3",
+    "term": "1月 前半",
+    "fans_required": 1500,
+    "fans_gained": 4100,
+    "track": "京都",
+    "distance_m": 1600,
+    "distance_type": "マイル",
+    "surface": "芝",
+    "rotation": "右回り（外）",
+    "bonus_status": "スピード"
+  },
+  "course": {
+    "course_set_id": 10805,
+    "raw_params": [
+      {"id": 0, "type": 99, "length": 20000, "distance": 0, "value": 0, "raceTrackCourseId": 0},
+      {"id": 10805002, "type": 2, "raceTrackCourseId": 10805, "distance": 20000, "length": 50000, "value": 2},
+      {"id": 10805000, "type": 0, "raceTrackCourseId": 10805, "distance": 70000, "length": 25000, "value": 3},
+      {"id": 10805001, "type": 0, "raceTrackCourseId": 10805, "distance": 95000, "length": 24700, "value": 4},
+      {"id": 10805003, "type": 2, "raceTrackCourseId": 10805, "distance": 119700, "length": 40300, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "無", "start": 0, "end": 200},
+      {"kind": "直線2", "start": 200, "end": 700},
+      {"kind": "コーナー3", "start": 700, "end": 950},
+      {"kind": "コーナー4", "start": 950, "end": 1197},
+      {"kind": "直線1", "start": 1197, "end": 1600}
+    ],
+    "slopes": [
+      {"kind": "上り坂", "start": 450, "end": 550, "per": 2},
+      {"kind": "上り坂", "start": 550, "end": 775, "per": 1},
+      {"kind": "下り坂", "start": 775, "end": 925, "per": -2}
+    ],
+    "slope_total_m": {"up": 6, "down": -6},
+    "phases_m": {
+      "序盤": [0, 267],
+      "中盤": [267, 1067],
+      "終盤": [1067, 1333],
+      "ラストスパート": [1333, 1600],
+      "ポジションキープ区間": [0, 667]
+    }
+  }
+}
