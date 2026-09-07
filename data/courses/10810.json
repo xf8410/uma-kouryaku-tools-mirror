@@ -1,0 +1,68 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/4001",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 4001,
+    "name": "万葉ステークス",
+    "name_kana": "マンヨウステークス",
+    "grade": "OP",
+    "term": "1月 前半",
+    "fans_required": 350,
+    "fans_gained": 2400,
+    "track": "京都",
+    "distance_m": 3000,
+    "distance_type": "長距離",
+    "surface": "芝",
+    "rotation": "右回り（外）",
+    "bonus_status": "パワー、賢さ"
+  },
+  "course": {
+    "course_set_id": 10810,
+    "raw_params": [
+      {"id": 10810006, "type": 2, "raceTrackCourseId": 10810, "distance": 0, "length": 26100, "value": 2},
+      {"id": 10810000, "type": 0, "raceTrackCourseId": 10810, "distance": 26100, "length": 25000, "value": 3},
+      {"id": 10810001, "type": 0, "raceTrackCourseId": 10810, "distance": 51100, "length": 25000, "value": 4},
+      {"id": 10810007, "type": 2, "raceTrackCourseId": 10810, "distance": 76100, "length": 48900, "value": 1},
+      {"id": 10810002, "type": 0, "raceTrackCourseId": 10810, "distance": 125000, "length": 20000, "value": 1},
+      {"id": 10810003, "type": 0, "raceTrackCourseId": 10810, "distance": 145000, "length": 20000, "value": 2},
+      {"id": 10810008, "type": 2, "raceTrackCourseId": 10810, "distance": 165000, "length": 45000, "value": 2},
+      {"id": 10810004, "type": 0, "raceTrackCourseId": 10810, "distance": 210000, "length": 25000, "value": 3},
+      {"id": 10810005, "type": 0, "raceTrackCourseId": 10810, "distance": 235000, "length": 24700, "value": 4},
+      {"id": 10810009, "type": 2, "raceTrackCourseId": 10810, "distance": 259700, "length": 40300, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "直線2", "start": 0, "end": 261},
+      {"kind": "コーナー3", "start": 261, "end": 511},
+      {"kind": "コーナー4", "start": 511, "end": 761},
+      {"kind": "直線1", "start": 761, "end": 1250},
+      {"kind": "コーナー1", "start": 1250, "end": 1450},
+      {"kind": "コーナー2", "start": 1450, "end": 1650},
+      {"kind": "直線2", "start": 1650, "end": 2100},
+      {"kind": "コーナー3", "start": 2100, "end": 2350},
+      {"kind": "コーナー4", "start": 2350, "end": 2597},
+      {"kind": "直線1", "start": 2597, "end": 3000}
+    ],
+    "slopes": [
+      {"kind": "上り坂", "start": 11, "end": 111, "per": 2},
+      {"kind": "上り坂", "start": 111, "end": 336, "per": 1},
+      {"kind": "下り坂", "start": 336, "end": 486, "per": -2},
+      {"kind": "上り坂", "start": 1850, "end": 1950, "per": 2},
+      {"kind": "上り坂", "start": 1950, "end": 2175, "per": 1},
+      {"kind": "下り坂", "start": 2175, "end": 2325, "per": -2}
+    ],
+    "slope_total_m": {"up": 7, "down": -7},
+    "phases_m": {
+      "序盤": [0, 500],
+      "中盤": [500, 2000],
+      "終盤": [2000, 2500],
+      "ラストスパート": [2500, 3000],
+      "ポジションキープ区間": [0, 1250]
+    }
+  },
+  "notable": [
+    "京都3000（10810）证实长距两圈结构：弯道1-2-3-4 完整出现，直線2×2段/直線1×2段",
+    "京都336-486 的 -2% 下坡即『坂苦手/下坡加速』判定段；第二组 1850-2325 重复同一坡型——京都外回长距 = 双圈坡道循环",
+    "skill_data 中 slope 条件（70 处）在此类赛道上的触发位置可静态判定",
+    "适用技能展示：非根幹距離○（3000 非根幹）、右回り○、京都レース場○、冬ウマ娘○"
+  ]
+}
