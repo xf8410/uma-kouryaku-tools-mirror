@@ -1,0 +1,59 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/2001",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 2001,
+    "name": "日経新春杯",
+    "name_kana": "ニッケイシンシュンハイ",
+    "grade": "G2",
+    "term": "1月 前半",
+    "fans_required": 1800,
+    "fans_gained": 5700,
+    "track": "京都",
+    "distance_m": 2400,
+    "distance_type": "中距離",
+    "surface": "芝",
+    "rotation": "右回り（外）",
+    "bonus_status": "パワー"
+  },
+  "course": {
+    "course_set_id": 10809,
+    "raw_params": [
+      {"id": 10809004, "type": 2, "raceTrackCourseId": 10809, "distance": 0, "length": 60000, "value": 1},
+      {"id": 10809000, "type": 0, "raceTrackCourseId": 10809, "distance": 60000, "length": 20000, "value": 1},
+      {"id": 10809001, "type": 0, "raceTrackCourseId": 10809, "distance": 80000, "length": 20000, "value": 2},
+      {"id": 10809005, "type": 2, "raceTrackCourseId": 10809, "distance": 100000, "length": 50000, "value": 2},
+      {"id": 10809002, "type": 0, "raceTrackCourseId": 10809, "distance": 150000, "length": 25000, "value": 3},
+      {"id": 10809003, "type": 0, "raceTrackCourseId": 10809, "distance": 175000, "length": 24700, "value": 4},
+      {"id": 10809006, "type": 2, "raceTrackCourseId": 10809, "distance": 199700, "length": 40300, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "直線1", "start": 0, "end": 600},
+      {"kind": "コーナー1", "start": 600, "end": 800},
+      {"kind": "コーナー2", "start": 800, "end": 1000},
+      {"kind": "直線2", "start": 1000, "end": 1500},
+      {"kind": "コーナー3", "start": 1500, "end": 1750},
+      {"kind": "コーナー4", "start": 1750, "end": 1997},
+      {"kind": "直線1", "start": 1997, "end": 2400}
+    ],
+    "slopes": [
+      {"kind": "上り坂", "start": 1250, "end": 1350, "per": 2},
+      {"kind": "上り坂", "start": 1350, "end": 1575, "per": 1},
+      {"kind": "下り坂", "start": 1575, "end": 1725, "per": -2}
+    ],
+    "slope_total_m": {"up": 6, "down": -6},
+    "phases_m": {
+      "序盤": [0, 400],
+      "中盤": [400, 1600],
+      "終盤": [1600, 2000],
+      "ラストスパート": [2000, 2400],
+      "ポジションキープ区間": [0, 1000]
+    }
+  },
+  "notable": [
+    "京都芝2400（10809）：『直線1起步』型——从直線1(0-600)开始，弯1-2在 600-1000，弯3-4在 1500-1997",
+    "京都外回坡型复现：1250-1725 与 1600m 版(10805: 450-925)同构（+2%/+1%/-2%），只是位置不同——京都外回 1600/2400/3000 均为同型坡道，位置=全长比例函数",
+    "直線1×2段 + 直線2×1段：与 3000(10810) 的 直線1×2+直線2×2 不同——CourseParam 直线数随距离变化",
+    "phase 边界 400/1600/2000：中盤跨度=全长 50%（1200m），比 1600 版（800m, 50%）一致——相位按比例切分得到实证"
+  ]
+}
