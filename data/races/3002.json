@@ -1,0 +1,61 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/3002",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 3002,
+    "name": "中山金杯",
+    "name_kana": "ナカヤマキンパイ",
+    "grade": "G3",
+    "term": "1月 前半",
+    "fans_required": 1500,
+    "fans_gained": 4100,
+    "track": "中山",
+    "distance_m": 2000,
+    "distance_type": "中距離",
+    "surface": "芝",
+    "rotation": "右回り（内）",
+    "bonus_status": "スピード"
+  },
+  "course": {
+    "course_set_id": 10504,
+    "raw_params": [
+      {"id": 10504004, "type": 2, "raceTrackCourseId": 10504, "distance": 0, "length": 37500, "value": 1},
+      {"id": 10504000, "type": 0, "raceTrackCourseId": 10504, "distance": 37500, "length": 25000, "value": 1},
+      {"id": 10504001, "type": 0, "raceTrackCourseId": 10504, "distance": 62500, "length": 25000, "value": 2},
+      {"id": 10504005, "type": 2, "raceTrackCourseId": 10504, "distance": 87500, "length": 32500, "value": 2},
+      {"id": 10504002, "type": 0, "raceTrackCourseId": 10504, "distance": 120000, "length": 25000, "value": 3},
+      {"id": 10504003, "type": 0, "raceTrackCourseId": 10504, "distance": 145000, "length": 24000, "value": 4},
+      {"id": 10504006, "type": 2, "raceTrackCourseId": 10504, "distance": 169000, "length": 31000, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "直線1", "start": 0, "end": 375},
+      {"kind": "コーナー1", "start": 375, "end": 625},
+      {"kind": "コーナー2", "start": 625, "end": 875},
+      {"kind": "直線2", "start": 875, "end": 1200},
+      {"kind": "コーナー3", "start": 1200, "end": 1450},
+      {"kind": "コーナー4", "start": 1450, "end": 1690},
+      {"kind": "直線1", "start": 1690, "end": 2000}
+    ],
+    "slopes": [
+      {"kind": "上り坂", "start": 125, "end": 235, "per": 2},
+      {"kind": "上り坂", "start": 325, "end": 525, "per": 1.5},
+      {"kind": "下り坂", "start": 625, "end": 1025, "per": -1.5},
+      {"kind": "上り坂", "start": 1825, "end": 1935, "per": 2}
+    ],
+    "slope_total_m": {"up": 7, "down": -7},
+    "phases_m": {
+      "序盤": [0, 333],
+      "中盤": [333, 1333],
+      "終盤": [1333, 1667],
+      "ラストスパート": [1667, 2000],
+      "ポジションキープ区間": [0, 833]
+    }
+  },
+  "notable": [
+    "中山芝2000内（10504）：中山著名三连坡完整呈现——125-235(+2%)、325-525(+1.5%)、625-1025(-1.5%) 长下坡 + 最终直线前 1825-1935(+2%) 二连上坡",
+    "下坡 400m（625-1025）是全表最长下坡之一——下り坂加速モード的主战场",
+    "slope per 出现 1.5%（15000）级别——中山/中京/東京特有；京都只有 1/2% 整数级",
+    "相性スキル・スキル実装での对照：uma-clock-emu course_data.json 10504 与此吻合度待核（blob 8988f125）",
+    "周回（内）标记——course_set 的内外回由 race 级别指定（同 course_set 可能内外共用？待 mdb race_course_set 确认）"
+  ]
+}

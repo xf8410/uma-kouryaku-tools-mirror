@@ -1,0 +1,65 @@
+{
+  "source": "https://ウマ娘.攻略.tools/skills",
+  "fetched_at": "2026-09-07",
+  "note": "スキル一覧页 RSC payload 内嵌 skill_data 完整 JSON（含 effectPatterns/conditions/preconditions/popularityParams）——与游戏 skill_data 同构，是技能条件 DSL 的第二个独立数据源。本文件为页首样例（ラーメン剧本技+场地适性技），全量 2000+ 条待分批抓取。",
+  "sample_skills": [
+    {
+      "id": 414011, "rarity": 6, "groupId": 41401, "gradeValue": 633, "skillCategory": 4,
+      "skillName": "バリカタ、一丁上がり！", "needSkillPoint": null,
+      "skillDesc": "すぐ後ろにウマ娘が長くいると速度がすごく上がる",
+      "effectPatterns": [{
+        "baseTime": 30000, "cooldownTime": 300000,
+        "effects": [{"value": 4500, "target": 27, "rangeType": 1, "rangeValue": 0}],
+        "conditions": [{"behind_near_lane_time": [{">=": "3"}], "accumulatetime": [{">=": "10"}]}],
+        "preconditions": []
+      }],
+      "popularityParams": [{"type": "スピード", "val": 60}]
+    },
+    {
+      "id": 414021, "rarity": 6, "skillCategory": 2,
+      "skillName": "じっくり仕込みの一杯",
+      "precondition1": "distance_type==3@distance_type==4",
+      "effectPatterns": [{
+        "baseTime": 24000, "cooldownTime": 5000000,
+        "effects": [{"value": 750, "target": 9}, {"value": 1500, "target": 22}],
+        "conditions": [{"phase_firsthalf_random": [{"==": "1"}]}],
+        "preconditions": [{"distance_type": [{"==": "3"}]}, {"distance_type": [{"==": "4"}]}]
+      }]
+    },
+    {
+      "id": 414041, "rarity": 6, "skillCategory": 2,
+      "skillName": "湯切りの妙技",
+      "note": "双 pattern：条件1=全维1000(强化版CurrentSpeed 0.55)；条件2=phase_random==1(普通版TargetSpeed 0.45)——条件分支在 effectPatterns 数组内表达",
+      "effectPatterns": [
+        {"baseTime": 18000, "cooldownTime": 5000000,
+         "effects": [{"value": 5500, "target": 22}],
+         "conditions": [{"phase_random": [{"==": "1"}], "distance_type": [{"==": "3"}],
+           "base_speed": [{">=": "1000"}], "base_stamina": [{">=": "1000"}],
+           "base_power": [{">=": "1000"}], "base_guts": [{">=": "1000"}], "base_wiz": [{">=": "1000"}]}]},
+        {"baseTime": 18000, "cooldownTime": 5000000,
+         "effects": [{"value": 4500, "target": 27}],
+         "conditions": [{"phase_random": [{"==": "1"}]}]}
+      ]
+    },
+    {
+      "id": 200011, "rarity": 1, "skillName": "右回り◎", "needSkillPoint": 110,
+      "effectPatterns": [{"baseTime": -1, "cooldownTime": 0,
+        "effects": [{"value": 600000, "target": 1}],
+        "conditions": [{"rotation": [{"==": "1"}]}]}],
+      "note": "被动技 baseTime=-1（常驻），value=600000（6%满维加成，非万分比速度值——被动与主动数值单位不同！target 1=Speed 2=Stamina 3=Power 5=Wiz）"
+    },
+    {
+      "id": 200012, "skillName": "右回り○",
+      "cardIds": "100503,102201,102303,105602,...",
+      "supportCardIds": "10028,10072,10076,...",
+      "note": "cardIds/supportCardIds = 持有该技能的育成角色/支援卡 ID 列表（跨表关联）"
+    }
+  ],
+  "key_facts": [
+    "conditions 键值=变量名→[{sign,value}] 数组（OR 条件表达为多对象数组，与 @ 等价）",
+    "effectPatterns 数组=多条件分支（强化版/普通版），游戏内同一 skill id 的多 pattern 表达",
+    "popularityParams=人气加成（属性→值），与 skill_data.popularity_add_param 列对应",
+    "被动技 baseTime=-1 cooldown=0；主动技 baseTime=万分秒, cooldownTime=万分秒(5000000=500s)",
+    "target 枚举：1=Speed 2=Stamina 3=Power 5=Wiz 9=HpRate 22=CurrentSpeedNaturalDecel 27=TargetSpeed"
+  ]
+}

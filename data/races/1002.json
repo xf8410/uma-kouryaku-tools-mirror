@@ -1,0 +1,53 @@
+{
+  "source": "https://ウマ娘.攻略.tools/race/races/1002",
+  "fetched_at": "2026-09-07",
+  "race": {
+    "race_id": 1002,
+    "name": "高松宮記念",
+    "name_kana": "タカマツノミヤキネン",
+    "grade": "G1",
+    "term": "3月 後半",
+    "fans_required": 15000,
+    "fans_gained": 13000,
+    "track": "中京",
+    "distance_m": 1200,
+    "distance_type": "短距離",
+    "surface": "芝",
+    "rotation": "左回り",
+    "bonus_status": "なし"
+  },
+  "course": {
+    "course_set_id": 10701,
+    "raw_params": [
+      {"id": 10701002, "type": 2, "raceTrackCourseId": 10701, "distance": 0, "length": 30000, "value": 2},
+      {"id": 10701000, "type": 0, "raceTrackCourseId": 10701, "distance": 30000, "length": 25000, "value": 3},
+      {"id": 10701001, "type": 0, "raceTrackCourseId": 10701, "distance": 55000, "length": 23800, "value": 4},
+      {"id": 10701003, "type": 2, "raceTrackCourseId": 10701, "distance": 78800, "length": 41200, "value": 1}
+    ],
+    "segments_m": [
+      {"kind": "直線2", "start": 0, "end": 300},
+      {"kind": "コーナー3", "start": 300, "end": 550},
+      {"kind": "コーナー4", "start": 550, "end": 788},
+      {"kind": "直線1", "start": 788, "end": 1200}
+    ],
+    "slopes": [
+      {"kind": "下り坂", "start": 100, "end": 875, "per": -1},
+      {"kind": "上り坂", "start": 875, "end": 975, "per": 2}
+    ],
+    "slope_total_m": {"up": 9, "down": -9},
+    "phases_m": {
+      "序盤": [0, 200],
+      "中盤": [200, 800],
+      "終盤": [800, 1000],
+      "ラストスパート": [1000, 1200],
+      "ポジションキープ区間": [0, 500]
+    }
+  },
+  "notable": [
+    "中京芝1200（10701）：无起始『無』段；弯3/4在 300-788；最终直线 412m",
+    "独特坡型：-1% 长下坡（100-875，跨弯道）+ 2% 短上坡（875-975）紧接最终直线前——下坡加速/坡苦手判定位置特殊",
+    "フェブラリーS(10611東京沙1600) 与本赛道同为『直線2起步无無段』型",
+    "目標レースのウマ娘 19 名（短距逃马阵容）——赛事→角色反向关联数据完整",
+    "補正ステータス=なし（高松宫无属性补正）——与京都金杯(スピード)等不同，race 表的补正字段不在 mdb race 列里，是站点从别处（可能 single_mode 相关）推导"
+  ]
+}
